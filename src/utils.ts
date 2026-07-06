@@ -240,7 +240,7 @@ export async function logEvent(eventName:string, eventDetails:any = {}) {
         // Add global config that turns warning off
         updateGlobalConfig({telemetryNoWarn: true})
         console.log(boxen(
-            chalk.greenBright.bold('By default, we collect a small amount of anonymized data around usage\n\nYou can disable telemetry by running ') 
+            chalk.greenBright.bold('By default, we collect a small amount of anonymous around usage data\n\nYou can disable telemetry by running ') 
             + chalk.magentaBright.bold("npx fusionauth telemetry:disable"), 
         {
             borderColor: 'green',
